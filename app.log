@@ -1,0 +1,391 @@
+
+2026-06-16 09:23:15,130 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 09:23:15,132 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 09:23:15,135 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 09:23:16,481 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 09:23:16,481 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 09:23:16,481 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 09:23:16,483 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 09:23:16,485 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 09:23:16,487 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 09:23:16,487 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 09:23:30,352 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 09:24:42,016 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 09:24:42,018 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 09:24:42,018 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 09:24:42,386 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 09:24:42,386 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 09:24:42,392 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 09:24:42,394 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 09:24:42,396 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 09:24:42,400 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 09:24:42,414 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 09:24:43,842 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 09:26:41,393 | INFO | app | DIAG | data['code'] files: 17
+2026-06-16 09:26:41,393 | INFO | app | DIAG | code_chunk count: 29
+2026-06-16 09:26:41,395 | INFO | app | DIAG | doc_chunk count: 9
+2026-06-16 09:26:41,397 | INFO | app | DIAG | code_chunk[0] keys: ['file', 'type', 'code']
+2026-06-16 09:26:41,399 | INFO | app | DIAG | code_chunk[0] code preview: 'import os\nfrom dotenv import load_dotenv\nfrom langchain_groq'
+2026-06-16 09:26:50,049 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 09:26:50,051 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 09:26:50,059 | INFO | app | DIAG | code_embed len: 29
+2026-06-16 09:26:50,063 | INFO | app | DIAG | code_embed[0] has 'embedding' key: True
+2026-06-16 09:26:50,063 | INFO | app | DIAG | code_embed[0]['embedding'] shape: (384,)
+2026-06-16 09:26:50,065 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 09:26:50,195 | INFO | app | DIAG | aveg_sim_code: 0.5382223417019022
+2026-06-16 09:26:50,195 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 3
+2026-06-16 09:26:50,197 | INFO | app | DIAG | top_k_code[0] preview: 'import os\nfrom dotenv import load_dotenv\nfrom langchain_groq import ChatGroq\n\nlo'
+2026-06-16 09:26:52,045 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 09:28:22,286 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 09:28:22,286 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 09:28:22,286 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 09:28:22,986 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 09:28:22,986 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 09:28:22,988 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 09:28:22,988 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 09:28:22,990 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 09:28:22,990 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 09:28:22,990 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 09:28:24,309 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 10:21:46,502 | ERROR | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 18:43:56,561 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 18:43:56,561 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 18:43:56,563 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 18:43:57,209 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 18:43:57,209 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 18:43:57,209 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 18:43:57,209 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 18:43:57,214 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 18:43:57,214 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 18:43:57,214 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 18:43:58,500 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 18:44:17,188 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 18:44:17,190 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 18:44:17,194 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 18:44:17,716 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 18:44:17,721 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 18:44:17,724 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 18:44:17,727 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 18:44:17,727 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 18:44:17,729 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 18:44:17,729 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 18:44:18,930 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 18:45:11,636 | INFO | app | DIAG | data['code'] files: 7
+2026-06-16 18:45:11,638 | INFO | app | DIAG | code_chunk count: 14
+2026-06-16 18:45:11,641 | INFO | app | DIAG | doc_chunk count: 11
+2026-06-16 18:45:11,646 | INFO | app | DIAG | code_chunk[0] keys: ['file', 'type', 'code']
+2026-06-16 18:45:11,647 | INFO | app | DIAG | code_chunk[0] code preview: 'def log_requests(request: Request, call_next):\n    logging.i'
+2026-06-16 18:45:16,542 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 18:45:16,544 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 18:45:16,544 | INFO | app | DIAG | code_embed len: 14
+2026-06-16 18:45:16,546 | INFO | app | DIAG | code_embed[0] has 'embedding' key: True
+2026-06-16 18:45:16,547 | INFO | app | DIAG | code_embed[0]['embedding'] shape: (384,)
+2026-06-16 18:45:16,549 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 18:45:16,630 | INFO | app | DIAG | aveg_sim_code: 0.5139972014086587
+2026-06-16 18:45:16,630 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 3
+2026-06-16 18:45:16,632 | INFO | app | DIAG | top_k_code[0] preview: 'import os\nimport logging\nimport pandas as pd\nfrom statsmodels.tsa.arima.model im'
+2026-06-16 18:45:18,410 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 18:45:35,247 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 18:45:35,247 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 18:45:35,249 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 18:45:35,599 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 18:45:35,601 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 18:45:35,601 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 18:45:35,603 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 18:45:35,610 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 18:45:35,612 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 18:45:35,615 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 18:45:36,988 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 18:45:49,142 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 18:45:49,143 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 18:45:49,143 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 18:45:49,341 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 18:45:49,341 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 18:45:49,343 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 18:45:49,343 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 18:45:49,345 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 18:45:49,345 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 18:45:49,347 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 18:45:50,454 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:06:29,545 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 19:06:29,545 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 19:06:29,545 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 19:06:29,915 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 19:06:29,915 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 19:06:29,917 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 19:06:29,917 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 19:06:29,919 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 19:06:29,922 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 19:06:29,924 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 19:06:31,586 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:07:56,245 | INFO | app | DIAG | data['code'] files: 12
+2026-06-16 19:07:56,245 | INFO | app | DIAG | code_chunk count: 32
+2026-06-16 19:07:56,247 | INFO | app | DIAG | doc_chunk count: 22
+2026-06-16 19:07:56,247 | INFO | app | DIAG | code_chunk[0] keys: ['file', 'type', 'code']
+2026-06-16 19:07:56,249 | INFO | app | DIAG | code_chunk[0] code preview: 'from datasets import load_dataset\n\ndataset = load_dataset("w'
+2026-06-16 19:08:08,765 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 19:08:08,765 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 19:08:08,767 | INFO | app | DIAG | code_embed len: 32
+2026-06-16 19:08:08,767 | INFO | app | DIAG | code_embed[0] has 'embedding' key: True
+2026-06-16 19:08:08,769 | INFO | app | DIAG | code_embed[0]['embedding'] shape: (384,)
+2026-06-16 19:08:08,769 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 19:08:08,913 | INFO | app | DIAG | aveg_sim_code: 0.5276025282219052
+2026-06-16 19:08:08,915 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 3
+2026-06-16 19:08:08,917 | INFO | app | DIAG | top_k_code[0] preview: 'class TextDataset(Dataset):'
+2026-06-16 19:08:10,891 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:09:11,458 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 19:09:11,458 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 19:09:11,458 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 19:09:11,545 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 19:09:11,547 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 19:09:11,547 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 19:09:11,547 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 19:09:11,547 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 19:09:11,547 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 19:09:11,547 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 19:09:13,232 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:22:25,175 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 19:22:25,175 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 19:22:25,175 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 19:22:25,798 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 19:22:25,800 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 19:22:25,800 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 19:22:25,800 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 19:22:25,800 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 19:22:25,800 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 19:22:25,800 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 19:22:27,147 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:23:21,431 | INFO | app | DIAG | data['code'] files: 12
+2026-06-16 19:23:21,433 | INFO | app | DIAG | code_chunk count: 52
+2026-06-16 19:23:21,439 | INFO | app | DIAG | doc_chunk count: 1
+2026-06-16 19:23:21,445 | INFO | app | DIAG | code_chunk[0] keys: ['file', 'type', 'code']
+2026-06-16 19:23:21,454 | INFO | app | DIAG | code_chunk[0] code preview: 'class AddNorm(nn.Module):'
+2026-06-16 19:23:30,519 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 19:23:30,520 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 19:23:30,520 | INFO | app | DIAG | code_embed len: 52
+2026-06-16 19:23:30,520 | INFO | app | DIAG | code_embed[0] has 'embedding' key: True
+2026-06-16 19:23:30,520 | INFO | app | DIAG | code_embed[0]['embedding'] shape: (384,)
+2026-06-16 19:23:30,520 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 19:23:30,560 | INFO | app | DIAG | aveg_sim_code: 0.5541472572546738
+2026-06-16 19:23:30,565 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 3
+2026-06-16 19:23:30,568 | INFO | app | DIAG | top_k_code[0] preview: 'def train_step(src_batch, tgt_input, tgt_output):\n    src_batch, tgt_input, tgt_'
+2026-06-16 19:23:32,190 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:24:29,127 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 19:24:29,128 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 19:24:29,128 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 19:24:29,569 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 19:24:29,572 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 19:24:29,576 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 19:24:29,578 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 19:24:29,580 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 19:24:29,585 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 19:24:29,587 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 19:24:31,134 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 19:58:06,441 | ERROR | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 19:58:07,161 | ERROR | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 20:06:59,556 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 20:06:59,556 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 20:06:59,556 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 20:07:00,174 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 20:07:00,174 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 20:07:00,176 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 20:07:00,178 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 20:07:00,178 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 20:07:00,180 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 20:07:00,180 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 20:07:01,599 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 20:07:16,296 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 20:07:16,298 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 20:07:16,298 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 20:07:16,415 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 20:07:16,421 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 20:07:16,421 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 20:07:16,423 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 20:07:16,423 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 20:07:16,423 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 20:07:16,425 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 20:07:17,783 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 20:07:58,011 | INFO | app | DIAG | data['code'] files: 0
+2026-06-16 20:07:58,015 | INFO | app | DIAG | code_chunk count: 0
+2026-06-16 20:07:58,015 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-16 20:07:58,284 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-16 20:07:58,285 | INFO | app | DIAG | code_embed is None: False
+2026-06-16 20:07:58,285 | INFO | app | DIAG | code_embed len: 0
+2026-06-16 20:07:58,287 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-16 20:07:58,288 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-16 20:07:58,288 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-16 20:07:58,290 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-16 20:07:59,869 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-16 20:47:16,435 | ERROR | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 20:47:16,647 | ERROR | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\om\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-17 05:20:55,901 | INFO | app | DIAG | data['code'] files: 0
+2026-06-17 05:20:55,902 | INFO | app | DIAG | code_chunk count: 0
+2026-06-17 05:20:55,902 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-17 05:20:56,341 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-17 05:20:56,343 | INFO | app | DIAG | code_embed is None: False
+2026-06-17 05:20:56,343 | INFO | app | DIAG | code_embed len: 0
+2026-06-17 05:20:56,345 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-17 05:20:56,345 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-17 05:20:56,345 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-17 05:20:56,345 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-17 05:20:57,597 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 05:23:42,800 | INFO | app | DIAG | data['code'] files: 0
+2026-06-17 05:23:42,800 | INFO | app | DIAG | code_chunk count: 0
+2026-06-17 05:23:42,800 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-17 05:23:42,994 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-17 05:23:42,994 | INFO | app | DIAG | code_embed is None: False
+2026-06-17 05:23:42,994 | INFO | app | DIAG | code_embed len: 0
+2026-06-17 05:23:42,994 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-17 05:23:42,994 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-17 05:23:42,994 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-17 05:23:42,995 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-17 05:23:43,980 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 06:04:48,659 | INFO | app | DIAG | data['code'] files: 0
+2026-06-17 06:04:48,659 | INFO | app | DIAG | code_chunk count: 0
+2026-06-17 06:04:48,661 | INFO | app | DIAG | doc_chunk count: 0
+2026-06-17 06:04:49,373 | INFO | app | DIAG | code_embed type: <class 'list'>
+2026-06-17 06:04:49,373 | INFO | app | DIAG | code_embed is None: False
+2026-06-17 06:04:49,375 | INFO | app | DIAG | code_embed len: 0
+2026-06-17 06:04:49,375 | INFO | app | DIAG | jd_emb type: <class 'numpy.ndarray'>, shape: (384,)
+2026-06-17 06:04:49,375 | INFO | app | DIAG | aveg_sim_code: 0.0
+2026-06-17 06:04:49,379 | INFO | app | DIAG | top_k_code type: <class 'list'>, len: 0
+2026-06-17 06:04:49,380 | INFO | app | DIAG | top_k_code is EMPTY - this is the bug location
+2026-06-17 06:04:50,449 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 06:28:17,144 | INFO | sentence_transformers.base.model | No device provided, using cpu
+2026-06-17 06:28:20,416 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:20,525 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:20,912 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:21,026 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:21,086 | INFO | sentence_transformers.base.model | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-17 06:28:21,387 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:21,510 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:21,849 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:21,950 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-17 06:28:22,808 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:23,211 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:24,248 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:25,783 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:27,028 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-17 06:28:28,741 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:28,952 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:31,198 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-17 06:28:31,626 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-17 06:28:32,017 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-17 06:28:32,332 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-17 06:28:32,837 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:32,932 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:33,251 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:33,373 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:33,683 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:33,785 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:34,119 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:34,329 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:34,647 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-17 06:28:35,020 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-17 06:28:35,708 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-17 06:28:35,824 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-17 06:28:36,408 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-19 19:37:03,161 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-19 19:37:03,163 | ERROR | embeding | Embedding batch failed: 'Client' object has no attribute 'embed_content'
+2026-06-20 06:23:42,671 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 06:23:42,671 | ERROR | embeding | Embedding batch failed: 'Client' object has no attribute 'embed_content'
+2026-06-20 06:26:00,473 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 06:26:00,476 | ERROR | embeding | Embedding batch failed: Models.embed_content() got an unexpected keyword argument 'content'
+2026-06-20 06:28:22,715 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 06:28:22,715 | ERROR | embeding | Embedding batch failed: Models.embed_content() got an unexpected keyword argument 'task_type'
+2026-06-20 06:30:32,875 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 06:30:32,883 | ERROR | embeding | Embedding batch failed: Models.embed_content() got an unexpected keyword argument 'task_type'
+2026-06-20 06:32:41,039 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 06:32:42,520 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 06:32:42,588 | ERROR | embeding | Embedding batch failed: 'EmbedContentResponse' object is not subscriptable
+2026-06-20 06:37:01,554 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 06:37:02,967 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 06:37:03,062 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 2
+2026-06-20 06:37:03,066 | INFO | embeding | Embedding batch 1 | chunks 0–19
+2026-06-20 06:37:04,849 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 06:37:06,020 | INFO | embeding | Embedding batch 2 | chunks 20–23
+2026-06-20 06:37:07,021 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 06:37:07,062 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 24
+2026-06-20 07:00:22,601 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 07:00:24,171 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:24,245 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 2
+2026-06-20 07:00:24,245 | INFO | embeding | Embedding batch 1 | chunks 0–19
+2026-06-20 07:00:26,219 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:27,421 | INFO | embeding | Embedding batch 2 | chunks 20–23
+2026-06-20 07:00:28,364 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:28,496 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 24
+2026-06-20 07:00:29,493 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:31,747 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-20 07:00:32,859 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:47,399 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 07:00:48,796 | INFO | embeding | Embedding batch 1 | chunks 0–1
+2026-06-20 07:00:48,803 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:48,892 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 2
+2026-06-20 07:00:48,892 | INFO | embeding | Embedding batch 1 | chunks 0–19
+2026-06-20 07:00:50,749 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:50,865 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:50,974 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 2
+2026-06-20 07:00:50,976 | INFO | embeding | Embedding batch 1 | chunks 0–19
+2026-06-20 07:00:51,989 | INFO | embeding | Embedding batch 2 | chunks 20–23
+2026-06-20 07:00:52,904 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:53,014 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:53,166 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 24
+2026-06-20 07:00:53,941 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:53,985 | INFO | embeding | Embedding batch 2 | chunks 20–23
+2026-06-20 07:00:54,816 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:54,978 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/customer-churn-prediction | Chunks: 24
+2026-06-20 07:00:55,443 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-20 07:00:55,746 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:56,443 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 07:00:57,193 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-20 07:00:58,273 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:29:55,216 | INFO | embeding | Embedding batch 1 | chunks 0–19
+2026-06-20 08:29:57,603 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:29:58,780 | INFO | embeding | Embedding batch 2 | chunks 20–39
+2026-06-20 08:30:00,571 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:30:01,854 | INFO | embeding | Embedding batch 3 | chunks 40–41
+2026-06-20 08:30:02,645 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:30:02,845 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/ACAndid | Chunks: 42
+2026-06-20 08:30:02,846 | INFO | embeding | Embedding batch 1 | chunks 0–19
+2026-06-20 08:30:04,677 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:30:05,750 | INFO | embeding | Embedding batch 2 | chunks 20–29
+2026-06-20 08:30:07,532 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:30:07,717 | INFO | embeding | Embedding success | Repo: https://github.com/shivam52444-cyber/ACAndid | Chunks: 30
+2026-06-20 08:30:08,660 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-06-20 08:30:11,104 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-20 08:30:12,348 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
